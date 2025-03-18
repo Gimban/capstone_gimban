@@ -470,6 +470,7 @@ MonoBehaviour:
   - {fileID: 8377056449163679959, guid: 53e334537b0961747bc399ae59ebc6aa, type: 3}
   - {fileID: 3669331624741453435, guid: 29c23126a6cb1964ba9f9066d4853af2, type: 3}
   - {fileID: 8484481267166544802, guid: 38315acc8b7ba454baf072d26a80c109, type: 3}
+  - {fileID: 1417569029175155560, guid: 8f4e0c7d83e81c24c8ffeab3df9fd180, type: 3}
   endPrefabs:
   - {fileID: 6867956003714455516, guid: 1352c06b785da1a409b8f9feba639229, type: 3}
   initialSectionTags:
