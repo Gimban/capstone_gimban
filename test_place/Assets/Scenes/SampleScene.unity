@@ -119,6 +119,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,6 +257,8 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+=======
+>>>>>>> origin/main
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,7 +625,11 @@ MonoBehaviour:
   - {fileID: 8377056449163679959, guid: 53e334537b0961747bc399ae59ebc6aa, type: 3}
   - {fileID: 3669331624741453435, guid: 29c23126a6cb1964ba9f9066d4853af2, type: 3}
   - {fileID: 8484481267166544802, guid: 38315acc8b7ba454baf072d26a80c109, type: 3}
+<<<<<<< HEAD
   - {fileID: 1417569029175155560, guid: 8f4e0c7d83e81c24c8ffeab3df9fd180, type: 3}
+=======
+  - {fileID: 7817105237228128321, guid: f164c1ff2ec52ed4b9f093aed1b79e5a, type: 3}
+>>>>>>> origin/main
   endPrefabs:
   - {fileID: 6867956003714455516, guid: 1352c06b785da1a409b8f9feba639229, type: 3}
   initialSectionTags:
@@ -635,6 +642,9 @@ MonoBehaviour:
     MinAmount: 2
     MaxAmount: 5
   - Tag: stair
+    MinAmount: 1
+    MaxAmount: 1
+  - Tag: lobby
     MinAmount: 1
     MaxAmount: 1
 --- !u!4 &1865174869
