@@ -85,7 +85,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8384170726458423614}
-  - component: {fileID: 8083504150596301853}
+  - component: {fileID: 3767834596799969833}
   m_Layer: 0
   m_Name: Box 1
   m_TagString: Untagged
@@ -108,8 +108,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3763284903750314201}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &8083504150596301853
-SphereCollider:
+--- !u!65 &3767834596799969833
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -127,8 +127,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.51
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.2, y: 0.6, z: 1}
+  m_Center: {x: 0, y: 0.3, z: 0}
 --- !u!1 &2904991018319491038
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,7 +181,8 @@ MonoBehaviour:
   createsTags:
   - corridor
   - room
-  deadEndChance: 10
+  - field
+  deadEndChance: 5
 --- !u!1 &5493440564465726454
 GameObject:
   m_ObjectHideFlags: 0

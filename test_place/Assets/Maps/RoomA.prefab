@@ -136,8 +136,9 @@ MonoBehaviour:
   - room
   createsTags:
   - corridor
+  - stair
   - room
-  deadEndChance: 0
+  deadEndChance: 10
 --- !u!1 &4318057995786240534
 GameObject:
   m_ObjectHideFlags: 0

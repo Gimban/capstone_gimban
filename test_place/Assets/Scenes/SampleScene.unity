@@ -256,77 +256,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!1 &373932606
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 373932608}
-  - component: {fileID: 373932607}
-  m_Layer: 0
-  m_Name: Generator
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &373932607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373932606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -766443767, guid: f560063dff201ed49a415a8d58f2aae2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  generateOnStart: 1
-  randomizeSeed: 1
-  seed: 0
-  sectionContainer: {fileID: 373932608}
-  maxLevelSize: 200
-  maxAllowedOrder: 25
-  sectionPrefabs:
-  - {fileID: 11835433341965080, guid: c922fec10f3cea841860c7478e6c2899, type: 3}
-  - {fileID: 1492136533057598152, guid: a53c3c7d7c7a455419092c05e890a804, type: 3}
-  - {fileID: 4811814393726696739, guid: 64c7f013cfbb98d4cadca554e0dd0421, type: 3}
-  - {fileID: 5512357670927176917, guid: 6e6dc0ffc40ca0c48994077da31731a2, type: 3}
-  - {fileID: 6097536851214569045, guid: 37397042b63958749882c7bff52d4dff, type: 3}
-  - {fileID: 9014937463811898191, guid: e7a44541ce241984e80a6fcef0fc2acf, type: 3}
-  - {fileID: 6097536851214569045, guid: bcdc52fadbcf2ae47822c6a4d0fc03da, type: 3}
-  - {fileID: 1431594780588024795, guid: ad9bc6b1afecaa146997ffac30d1df51, type: 3}
-  - {fileID: 6776779703691524478, guid: c58a709c604a22c46859c04083cab5e9, type: 3}
-  endPrefabs:
-  - {fileID: 6867956003714455516, guid: 1352c06b785da1a409b8f9feba639229, type: 3}
-  initialSectionTags:
-  - spawn
-  specialRules:
-  - Tag: spawn
-    MinAmount: 1
-    MaxAmount: 1
-  - Tag: room
-    MinAmount: 50
-    MaxAmount: 200
---- !u!4 &373932608
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373932606}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,7 +437,7 @@ GameObject:
   - component: {fileID: 1865174869}
   - component: {fileID: 1865174868}
   m_Layer: 0
-  m_Name: Generator 2
+  m_Name: Generator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -527,10 +456,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   generateOnStart: 1
-  randomizeSeed: 0
+  randomizeSeed: 1
   seed: -106691531
   sectionContainer: {fileID: 1865174869}
-  maxLevelSize: 200
+  maxLevelSize: 300
   maxAllowedOrder: 20
   sectionPrefabs:
   - {fileID: 2184231901537249255, guid: aba4c0d6746125a479fef153bac8ef38, type: 3}
@@ -538,12 +467,21 @@ MonoBehaviour:
   - {fileID: 1911139787418233598, guid: dcf7f05b15914184abb5a1b056633200, type: 3}
   - {fileID: 8430697975462140138, guid: f517d8ce13525db46994bb1e660958b5, type: 3}
   - {fileID: 314385292717717576, guid: 95fb1e25f316caa48b8514235ffa17ae, type: 3}
+  - {fileID: 8377056449163679959, guid: 53e334537b0961747bc399ae59ebc6aa, type: 3}
+  - {fileID: 3669331624741453435, guid: 29c23126a6cb1964ba9f9066d4853af2, type: 3}
+  - {fileID: 8484481267166544802, guid: 38315acc8b7ba454baf072d26a80c109, type: 3}
   endPrefabs:
   - {fileID: 6867956003714455516, guid: 1352c06b785da1a409b8f9feba639229, type: 3}
   initialSectionTags:
   - basecamp
   specialRules:
   - Tag: basecamp
+    MinAmount: 1
+    MaxAmount: 1
+  - Tag: field
+    MinAmount: 2
+    MaxAmount: 5
+  - Tag: stair
     MinAmount: 1
     MaxAmount: 1
 --- !u!4 &1865174869
@@ -568,5 +506,4 @@ SceneRoots:
   - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 832575519}
-  - {fileID: 373932608}
   - {fileID: 1865174869}
