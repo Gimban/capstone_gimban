@@ -292,6 +292,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 3757142135004035356, guid: 00b09a13ec77a8b40b1593f32e174c60, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -338,6 +342,69 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 832575517}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1679295574
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1679295576}
+  - component: {fileID: 1679295575}
+  m_Layer: 0
+  m_Name: Mansion_Generator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1679295575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679295574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -766443767, guid: f560063dff201ed49a415a8d58f2aae2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  generateOnStart: 1
+  randomizeSeed: 1
+  seed: -106691531
+  sectionContainer: {fileID: 1679295576}
+  maxLevelSize: 300
+  maxAllowedOrder: 20
+  sectionPrefabs:
+  - {fileID: 4404222912348062490, guid: cdc75dcb098ce41439ae44d8208df655, type: 3}
+  - {fileID: 5248135501332620885, guid: ab9a6f1f705d5b84cb996793b8c52949, type: 3}
+  - {fileID: 6172600690655352960, guid: 68e335159b62d3c4f97da47f2263a39b, type: 3}
+  - {fileID: 221297420022016600, guid: 99694c721a09e8a46805a8af360f037a, type: 3}
+  endPrefabs:
+  - {fileID: 6867956003714455516, guid: 1352c06b785da1a409b8f9feba639229, type: 3}
+  initialSectionTags:
+  - lobby
+  specialRules:
+  - Tag: lobby
+    MinAmount: 1
+    MaxAmount: 1
+--- !u!4 &1679295576
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679295574}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -430,4 +497,5 @@ SceneRoots:
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 1865174869}
+  - {fileID: 1679295576}
   - {fileID: 790767420}
