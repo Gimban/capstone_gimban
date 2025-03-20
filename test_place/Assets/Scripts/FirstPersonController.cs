@@ -33,6 +33,6 @@ public class FirstPersonController : MonoBehaviour
         float moveZ = Input.GetAxis("Vertical");
 
         Vector3 move = transform.right * moveX + transform.forward * moveZ;
-        rb.linearVelocity = new Vector3(move.x * moveSpeed, rb.linearVelocity.y + 0.02f, move.z * moveSpeed);
+        rb.linearVelocity = new Vector3(move.x * moveSpeed, rb.linearVelocity.y + 0.03f, move.z * moveSpeed);
     }
 }

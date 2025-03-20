@@ -248,6 +248,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 468745880847753456, guid: 00b09a13ec77a8b40b1593f32e174c60, type: 3}
+      propertyPath: m_Drag
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 468745880847753456, guid: 00b09a13ec77a8b40b1593f32e174c60, type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633406084638523863, guid: 00b09a13ec77a8b40b1593f32e174c60, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633406084638523863, guid: 00b09a13ec77a8b40b1593f32e174c60, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633406084638523863, guid: 00b09a13ec77a8b40b1593f32e174c60, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 1633406084638523863, guid: 00b09a13ec77a8b40b1593f32e174c60, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.098
@@ -291,10 +311,6 @@ PrefabInstance:
     - target: {fileID: 3757142135004035356, guid: 00b09a13ec77a8b40b1593f32e174c60, type: 3}
       propertyPath: m_Name
       value: TestPlayer
-      objectReference: {fileID: 0}
-    - target: {fileID: 3757142135004035356, guid: 00b09a13ec77a8b40b1593f32e174c60, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -383,19 +399,33 @@ MonoBehaviour:
   randomizeSeed: 1
   seed: -106691531
   sectionContainer: {fileID: 1679295576}
-  maxLevelSize: 300
-  maxAllowedOrder: 20
+  maxLevelSize: 200
+  maxAllowedOrder: 15
   sectionPrefabs:
-  - {fileID: 4404222912348062490, guid: cdc75dcb098ce41439ae44d8208df655, type: 3}
+  - {fileID: 2258804119456489990, guid: d8f5b3dea93f61a40b85eeb208bd3b9b, type: 3}
+  - {fileID: 2715914965655754742, guid: 172ab09bdc4c1744d984d13b34111138, type: 3}
+  - {fileID: 3962780025391012613, guid: cbcd5f2650bbe4b409debe42cec8414f, type: 3}
+  - {fileID: 4911574566382667694, guid: 44c3f557e2adc2d44affccadeea837ce, type: 3}
   - {fileID: 5248135501332620885, guid: ab9a6f1f705d5b84cb996793b8c52949, type: 3}
   - {fileID: 6172600690655352960, guid: 68e335159b62d3c4f97da47f2263a39b, type: 3}
+  - {fileID: 2934832678134244549, guid: f2b1d5ec48e3c55498d13b5dc670b3c2, type: 3}
+  - {fileID: 4404222912348062490, guid: cdc75dcb098ce41439ae44d8208df655, type: 3}
+  - {fileID: 1282703096003908901, guid: 533b2c4be1ccf0549bf15b859e528815, type: 3}
+  - {fileID: 4659162941855123048, guid: 3f751426df9ed454eb8e68a37fd7e199, type: 3}
+  - {fileID: 9143700959294678356, guid: a53e163c4947c6145892fffb7805702c, type: 3}
+  - {fileID: 3528595372854761674, guid: 3fcaa03f2944a8a4aa3ffebfc4e66b45, type: 3}
   - {fileID: 221297420022016600, guid: 99694c721a09e8a46805a8af360f037a, type: 3}
+  - {fileID: 4375157048325449807, guid: 20f103343de343c4388dd0cbe5da20ee, type: 3}
+  - {fileID: 2903552707338382014, guid: 968e757e448be79419ae5f3527790111, type: 3}
   endPrefabs:
   - {fileID: 6867956003714455516, guid: 1352c06b785da1a409b8f9feba639229, type: 3}
   initialSectionTags:
   - lobby
   specialRules:
   - Tag: lobby
+    MinAmount: 1
+    MaxAmount: 1
+  - Tag: library
     MinAmount: 1
     MaxAmount: 1
 --- !u!4 &1679295576
