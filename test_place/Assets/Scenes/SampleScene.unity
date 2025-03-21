@@ -341,6 +341,7 @@ MonoBehaviour:
   - {fileID: 6358574616257871719, guid: 50f54eaae24b9d541b3e4568f69ce72d, type: 3}
   - {fileID: 6447941070512418230, guid: 7e7b91abd19613447be24427eb3b0401, type: 3}
   - {fileID: 970098907551572489, guid: 486abd2783c778a4ca1ee7968e830552, type: 3}
+  - {fileID: 1944242356334873330, guid: 780bfff68443bf444aef7aad9183265f, type: 3}
   endPrefabs:
   - {fileID: 3035367916353181208, guid: ad7cc043ffc8b3c448e7bb1c50a07acf, type: 3}
   initialSectionTags:
@@ -352,18 +353,21 @@ MonoBehaviour:
   - Tag: library
     MinAmount: 1
     MaxAmount: 1
-  - Tag: stair_bottom
-    MinAmount: 1
-    MaxAmount: 1
   - Tag: stair_top
     MinAmount: 1
     MaxAmount: 1
   - Tag: stair_mid
     MinAmount: 0
     MaxAmount: 0
+  - Tag: stair_bottom
+    MinAmount: 1
+    MaxAmount: 1
   - Tag: room
     MinAmount: 3
     MaxAmount: 15
+  - Tag: courtyard
+    MinAmount: 1
+    MaxAmount: 1
 --- !u!4 &1679295576
 Transform:
   m_ObjectHideFlags: 0
@@ -472,7 +476,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1928020009
 MonoBehaviour:
   m_ObjectHideFlags: 0

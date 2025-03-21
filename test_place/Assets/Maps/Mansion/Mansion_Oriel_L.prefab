@@ -136,6 +136,7 @@ MonoBehaviour:
   createsTags:
   - corridor_doorless
   - lounge
+  - courtyard
   deadEndChance: 5
 --- !u!1 &3189954443046066051
 GameObject:
