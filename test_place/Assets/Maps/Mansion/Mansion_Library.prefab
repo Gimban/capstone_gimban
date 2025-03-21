@@ -321,10 +321,8 @@ MonoBehaviour:
   tags:
   - library
   createsTags:
-  - corridor
   - corridor_doorless
   - lounge
-  - corridor_cross
   - corridor_cross_doorless
   deadEndChance: 0
 --- !u!1 &7969858545211846344

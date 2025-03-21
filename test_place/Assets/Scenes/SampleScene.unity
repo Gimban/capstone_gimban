@@ -322,15 +322,12 @@ MonoBehaviour:
   randomizeSeed: 1
   seed: -106691531
   sectionContainer: {fileID: 1679295576}
-  maxLevelSize: 200
+  maxLevelSize: 300
   maxAllowedOrder: 15
   sectionPrefabs:
-  - {fileID: 2258804119456489990, guid: d8f5b3dea93f61a40b85eeb208bd3b9b, type: 3}
   - {fileID: 7041566509404218372, guid: 532a2c994b4c60d4cb78466df03ca045, type: 3}
-  - {fileID: 2715914965655754742, guid: 172ab09bdc4c1744d984d13b34111138, type: 3}
   - {fileID: 3962780025391012613, guid: cbcd5f2650bbe4b409debe42cec8414f, type: 3}
   - {fileID: 4911574566382667694, guid: 44c3f557e2adc2d44affccadeea837ce, type: 3}
-  - {fileID: 5248135501332620885, guid: ab9a6f1f705d5b84cb996793b8c52949, type: 3}
   - {fileID: 6172600690655352960, guid: 68e335159b62d3c4f97da47f2263a39b, type: 3}
   - {fileID: 2934832678134244549, guid: f2b1d5ec48e3c55498d13b5dc670b3c2, type: 3}
   - {fileID: 4404222912348062490, guid: cdc75dcb098ce41439ae44d8208df655, type: 3}
@@ -364,6 +361,9 @@ MonoBehaviour:
   - Tag: stair_mid
     MinAmount: 0
     MaxAmount: 0
+  - Tag: room
+    MinAmount: 3
+    MaxAmount: 15
 --- !u!4 &1679295576
 Transform:
   m_ObjectHideFlags: 0
@@ -456,6 +456,66 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1928020008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1928020010}
+  - component: {fileID: 1928020009}
+  m_Layer: 0
+  m_Name: Mansion_Generator (stair test)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1928020009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928020008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -766443767, guid: f560063dff201ed49a415a8d58f2aae2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  generateOnStart: 1
+  randomizeSeed: 1
+  seed: -106691531
+  sectionContainer: {fileID: 1928020010}
+  maxLevelSize: 30
+  maxAllowedOrder: 15
+  sectionPrefabs:
+  - {fileID: 7041566509404218372, guid: 532a2c994b4c60d4cb78466df03ca045, type: 3}
+  - {fileID: 6358574616257871719, guid: 50f54eaae24b9d541b3e4568f69ce72d, type: 3}
+  - {fileID: 6447941070512418230, guid: 7e7b91abd19613447be24427eb3b0401, type: 3}
+  - {fileID: 970098907551572489, guid: 486abd2783c778a4ca1ee7968e830552, type: 3}
+  endPrefabs:
+  - {fileID: 3035367916353181208, guid: ad7cc043ffc8b3c448e7bb1c50a07acf, type: 3}
+  initialSectionTags:
+  - corridor_cross_doorless
+  specialRules: []
+--- !u!4 &1928020010
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928020008}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -464,3 +524,4 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 1865174869}
   - {fileID: 1679295576}
+  - {fileID: 1928020010}

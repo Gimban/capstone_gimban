@@ -267,10 +267,9 @@ MonoBehaviour:
   tags:
   - corridor_cross_doorless
   createsTags:
-  - corridor
+  - stair_bottom
   - corridor_doorless
   - library
-  - stair_bottom
   deadEndChance: 5
 --- !u!1 &7473555041443432517
 GameObject:

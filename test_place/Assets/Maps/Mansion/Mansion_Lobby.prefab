@@ -158,7 +158,6 @@ MonoBehaviour:
   tags:
   - lobby
   createsTags:
-  - corridor
   - corridor_doorless
   deadEndChance: 0
 --- !u!1 &3447688283827691860

@@ -181,11 +181,9 @@ MonoBehaviour:
   tags:
   - corridor_doorless
   createsTags:
-  - corridor
   - corridor_doorless
   - lounge
   - oriel
-  - corridor_cross
   - corridor_cross_doorless
   deadEndChance: 5
 --- !u!1 &5731941080047530808

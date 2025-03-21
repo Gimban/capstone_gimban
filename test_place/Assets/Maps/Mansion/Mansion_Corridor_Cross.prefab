@@ -129,6 +129,7 @@ MonoBehaviour:
   - corridor
   - corridor_doorless
   - library
+  - stair_bottom
   deadEndChance: 5
 --- !u!1 &2820455794617147953
 GameObject:

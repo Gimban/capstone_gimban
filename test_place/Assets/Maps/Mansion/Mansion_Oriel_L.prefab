@@ -134,7 +134,6 @@ MonoBehaviour:
   tags:
   - oriel
   createsTags:
-  - corridor
   - corridor_doorless
   - lounge
   deadEndChance: 5
