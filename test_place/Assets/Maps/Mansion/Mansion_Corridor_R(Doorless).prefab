@@ -177,6 +177,7 @@ MonoBehaviour:
   - lounge
   - oriel
   - corridor_cross
+  - corridor_cross_doorless
   deadEndChance: 5
 --- !u!1 &5415187264847934971
 GameObject:

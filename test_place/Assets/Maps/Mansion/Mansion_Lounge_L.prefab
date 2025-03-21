@@ -107,6 +107,7 @@ MonoBehaviour:
   - corridor_doorless
   - oriel
   - corridor_cross
+  - corridor_cross_doorless
   deadEndChance: 5
 --- !u!1 &4197749044323914104
 GameObject:

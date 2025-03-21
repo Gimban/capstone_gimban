@@ -309,6 +309,7 @@ MonoBehaviour:
   - lounge
   - oriel
   - corridor_cross
+  - corridor_cross_doorless
   deadEndChance: 5
 --- !u!1001 &5633056894628751849
 PrefabInstance:

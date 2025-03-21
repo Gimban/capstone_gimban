@@ -194,6 +194,7 @@ MonoBehaviour:
   - corridor_long
   createsTags:
   - corridor_cross
+  - corridor_cross_doorless
   deadEndChance: 0
 --- !u!1 &6918042063364168971
 GameObject:
