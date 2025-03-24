@@ -342,6 +342,7 @@ MonoBehaviour:
   - {fileID: 6447941070512418230, guid: 7e7b91abd19613447be24427eb3b0401, type: 3}
   - {fileID: 970098907551572489, guid: 486abd2783c778a4ca1ee7968e830552, type: 3}
   - {fileID: 1944242356334873330, guid: 780bfff68443bf444aef7aad9183265f, type: 3}
+  - {fileID: 4856415406657042229, guid: 1978be74d7f39b84aac8a769b896791f, type: 3}
   endPrefabs:
   - {fileID: 3035367916353181208, guid: ad7cc043ffc8b3c448e7bb1c50a07acf, type: 3}
   initialSectionTags:
@@ -368,6 +369,9 @@ MonoBehaviour:
   - Tag: courtyard
     MinAmount: 1
     MaxAmount: 1
+  - Tag: stair_integrated
+    MinAmount: 0
+    MaxAmount: 0
 --- !u!4 &1679295576
 Transform:
   m_ObjectHideFlags: 0
