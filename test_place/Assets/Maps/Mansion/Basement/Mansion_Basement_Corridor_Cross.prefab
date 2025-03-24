@@ -276,7 +276,7 @@ MonoBehaviour:
   - basement_corridor
   - basement_corridor_t
   - basement_corridor_corner
-  deadEndChance: 5
+  deadEndChance: 1
 --- !u!1 &8833214739834446466
 GameObject:
   m_ObjectHideFlags: 0

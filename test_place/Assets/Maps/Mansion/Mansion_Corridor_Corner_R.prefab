@@ -268,11 +268,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tags:
-  - basement_corridor_corner
+  - corridor_corner
   createsTags:
-  - bsaement_corridor
-  - basement_corridor_cross
-  - basement_corridor_t
+  - corridor
+  - corridor_cross
+  - corridor_t
   deadEndChance: 5
 --- !u!1001 &4655874447533622144
 PrefabInstance:

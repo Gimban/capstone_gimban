@@ -240,6 +240,67 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
+--- !u!1 &513512377
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 513512379}
+  - component: {fileID: 513512378}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &513512378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513512377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -766443767, guid: f560063dff201ed49a415a8d58f2aae2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  generateOnStart: 0
+  randomizeSeed: 0
+  seed: 0
+  sectionContainer: {fileID: 513512379}
+  maxLevelSize: 0
+  maxAllowedOrder: 0
+  sectionPrefabs:
+  - {fileID: 0}
+  endPrefabs: []
+  initialSectionTags: []
+  specialRules:
+  - Tag: lobby
+    MinAmount: 1
+    MaxAmount: 1
+  - Tag: room
+    MinAmount: 3
+    MaxAmount: 15
+--- !u!4 &513512379
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513512377}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,6 +404,14 @@ MonoBehaviour:
   - {fileID: 970098907551572489, guid: 486abd2783c778a4ca1ee7968e830552, type: 3}
   - {fileID: 1944242356334873330, guid: 780bfff68443bf444aef7aad9183265f, type: 3}
   - {fileID: 4856415406657042229, guid: 1978be74d7f39b84aac8a769b896791f, type: 3}
+  - {fileID: 8331275761420718048, guid: a1344abe64328d5408988310ffcc6cc6, type: 3}
+  - {fileID: 5941461045902035220, guid: 2288d98bdac239f439cccc156f247590, type: 3}
+  - {fileID: 5878684771878237019, guid: b167a835af4b11543b624396026c7e9e, type: 3}
+  - {fileID: 8323752303513581824, guid: cef5a92c6fa6e284eb59c34db654f533, type: 3}
+  - {fileID: 351415927616262165, guid: dbd6c69eb9ea1654487a9222e6b32100, type: 3}
+  - {fileID: 752633691930454967, guid: 16c2a792393ba9f4b9ce6ea84f873234, type: 3}
+  - {fileID: 8155705184057029560, guid: 6495e3a81123a4a45a2dff9a71534c81, type: 3}
+  - {fileID: 6761329638427040184, guid: ecb6381c4c188b149a07ab035dae9ba9, type: 3}
   endPrefabs:
   - {fileID: 3035367916353181208, guid: ad7cc043ffc8b3c448e7bb1c50a07acf, type: 3}
   initialSectionTags:
@@ -604,3 +673,4 @@ SceneRoots:
   - {fileID: 1679295576}
   - {fileID: 1928020010}
   - {fileID: 1907874987}
+  - {fileID: 513512379}
