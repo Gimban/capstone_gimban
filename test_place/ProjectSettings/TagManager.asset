@@ -6,6 +6,7 @@ TagManager:
   tags:
   - SPAWN
   - LIGHT
+  - PLAYER
   layers:
   - Default
   - TransparentFX
