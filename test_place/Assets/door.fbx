@@ -11,11 +11,11 @@ FBXHeaderExtension:  {
 		Version: 1000
 		Year: 2025
 		Month: 3
-		Day: 28
-		Hour: 16
-		Minute: 21
-		Second: 10
-		Millisecond: 704
+		Day: 29
+		Hour: 12
+		Minute: 8
+		Second: 31
+		Millisecond: 994
 	}
 	Creator: "Blockbench 4.12.3"
 	SceneInfo: "SceneInfo::GlobalInfo", "UserData" {
@@ -49,7 +49,7 @@ FBXHeaderExtension:  {
 	}
 }
 FileId: "iVFoobar"
-CreationTime: "2025-03-28 07:21:10:704"
+CreationTime: "2025-03-29 03:08:31:994"
 Creator: "Made with Blockbench"
 GlobalSettings:  {
 	Version: 1000
@@ -78,7 +78,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 1139329423 {
+	Document: 1769069251 {
 		Scene: "Scene"
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
@@ -238,7 +238,7 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	Geometry: 60502210, "Geometry::handle", "Mesh" {
+	Geometry: 15508905, "Geometry::handle", "Mesh" {
 		Vertices: *216 {
 			a: 0.8806875000000001,0.6470625,3.28675,0.9823749999999999,0.3235,3.66625,0.9823749999999999,-0.3235,3.66625,0.8806875000000001,-0.6470625,3.28675,0.779,-0.3235,2.9071875,0.779,0.3235,2.9071875,2.4060625,0.6470625,2.4060625,2.683875,0.3235,2.683875,2.683875,-0.3235,2.683875,2.4060625,-0.6470625,2.4060625,2.12825,-0.3235,2.12825,2.12825,0.3235,2.12825,3.28675,0.6470625,0.8806875000000001,3.66625,0.3235,0.9823749999999999,3.66625,-0.3235,0.9823749999999999,3.28675,-0.6470625,0.8806875000000001,2.9071875,-0.3235,0.779,2.9071875,0.3235,0.779,3.28675,0.6470625,-0.8806875000000001,3.66625,0.3235,-0.9823749999999999,3.66625,-0.3235,-0.9823749999999999,3.28675,-0.6470625,-0.8806875000000001,2.9071875,-0.3235,-0.779,2.9071875,0.3235,-0.779,2.4060625,0.6470625,-2.4060625,2.683875,0.3235,-2.683875,2.683875,-0.3235,-2.683875,2.4060625,-0.6470625,-2.4060625,2.12825,-0.3235,-2.12825,2.12825,0.3235,-2.12825,0.8806875000000001,0.6470625,-3.28675,0.9823749999999999,0.3235,-3.66625,0.9823749999999999,-0.3235,-3.66625,0.8806875000000001,-0.6470625,-3.28675,0.779,-0.3235,-2.9071875,0.779,0.3235,-2.9071875,-0.8806875000000001,0.6470625,-3.28675,-0.9823749999999999,0.3235,-3.66625,-0.9823749999999999,-0.3235,-3.66625,-0.8806875000000001,-0.6470625,-3.28675,-0.779,-0.3235,-2.9071875,-0.779,0.3235,-2.9071875,-2.4060625,0.6470625,-2.4060625,-2.683875,0.3235,-2.683875,-2.683875,-0.3235,-2.683875,-2.4060625,-0.6470625,-2.4060625,-2.12825,-0.3235,-2.12825,-2.12825,0.3235,-2.12825,-3.28675,0.6470625,-0.8806875000000001,-3.66625,0.3235,-0.9823749999999999,-3.66625,-0.3235,-0.9823749999999999,-3.28675,-0.6470625,-0.8806875000000001,-2.9071875,-0.3235,-0.779,-2.9071875,0.3235,-0.779,-3.28675,0.6470625,0.8806875000000001,-3.66625,0.3235,0.9823749999999999,-3.66625,-0.3235,0.9823749999999999,-3.28675,-0.6470625,0.8806875000000001,-2.9071875,-0.3235,0.779,-2.9071875,0.3235,0.779,-2.4060625,0.6470625,2.4060625,-2.683875,0.3235,2.683875,-2.683875,-0.3235,2.683875,-2.4060625,-0.6470625,2.4060625,-2.12825,-0.3235,2.12825,-2.12825,0.3235,2.12825,-0.8806875000000001,0.6470625,3.28675,-0.9823749999999999,0.3235,3.66625,-0.9823749999999999,-0.3235,3.66625,-0.8806875000000001,-0.6470625,3.28675,-0.779,-0.3235,2.9071875,-0.779,0.3235,2.9071875
 		}
@@ -289,7 +289,7 @@ Objects:  {
 			}
 		}
 	}
-	Geometry: 80146693, "Geometry::door_1", "Mesh" {
+	Geometry: 35093547, "Geometry::door_1", "Mesh" {
 		Vertices: *24 {
 			a: 12.5,62.5,1.5625,12.5,62.5,-1.5625,12.5,0,1.5625,12.5,0,-1.5625,-12.5,62.5,1.5625,-12.5,62.5,-1.5625,-12.5,0,1.5625,-12.5,0,-1.5625
 		}
@@ -340,13 +340,13 @@ Objects:  {
 			}
 		}
 	}
-	Model: 31995588, "Model::door", "Null" {
+	Model: 21086989, "Model::door", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",12.5,6.25,1.25
+			P: "Lcl Translation", "Lcl Translation", "", "A",12.5,0,1.25
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
 			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
 			P: "RotationOrder", "enum", "", "",0
@@ -354,7 +354,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 57746033, "Model::door_1", "Mesh" {
+	Model: 65004731, "Model::door_1", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -369,7 +369,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 16671027, "Model::handle", "Mesh" {
+	Model: 72583309, "Model::handle", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -384,22 +384,22 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	AnimationStack: 62776089, "AnimStack::door_open", "" {
+	AnimationStack: 32417886, "AnimStack::door_open", "" {
 		Properties70:  {
 			P: "LocalStop", "KTime", "Time", "",23093079000
 			P: "ReferenceStop", "KTime", "Time", "",23093079000
 		}
 	}
-	AnimationLayer: 65598783, "AnimLayer::door_open", "" {
+	AnimationLayer: 29458573, "AnimLayer::door_open", "" {
 	}
-	AnimationCurveNode: 79309380, "AnimCurveNode::door_open.R", "" {
+	AnimationCurveNode: 72349430, "AnimCurveNode::door_open.R", "" {
 		Properties70:  {
 			P: "d|X", "Number", "", "A",1
 			P: "d|Y", "Number", "", "A",1
 			P: "d|Z", "Number", "", "A",1
 		}
 	}
-	AnimationCurve: 22948208, "AnimCurve::door_open.RX", "" {
+	AnimationCurve: 8526184, "AnimCurve::door_open.RX", "" {
 		Default: 0
 		KeyVer: 4008
 		KeyTime: *2 {
@@ -418,7 +418,7 @@ Objects:  {
 			a: 2
 		}
 	}
-	AnimationCurve: 26111608, "AnimCurve::door_open.RY", "" {
+	AnimationCurve: 73213062, "AnimCurve::door_open.RY", "" {
 		Default: 0
 		KeyVer: 4008
 		KeyTime: *2 {
@@ -437,7 +437,7 @@ Objects:  {
 			a: 2
 		}
 	}
-	AnimationCurve: 92135185, "AnimCurve::door_open.RZ", "" {
+	AnimationCurve: 35862788, "AnimCurve::door_open.RZ", "" {
 		Default: 0
 		KeyVer: 4008
 		KeyTime: *2 {
@@ -456,22 +456,22 @@ Objects:  {
 			a: 2
 		}
 	}
-	AnimationStack: 92043988, "AnimStack::door_close", "" {
+	AnimationStack: 70070162, "AnimStack::door_close", "" {
 		Properties70:  {
 			P: "LocalStop", "KTime", "Time", "",23093079000
 			P: "ReferenceStop", "KTime", "Time", "",23093079000
 		}
 	}
-	AnimationLayer: 23471174, "AnimLayer::door_close", "" {
+	AnimationLayer: 97512303, "AnimLayer::door_close", "" {
 	}
-	AnimationCurveNode: 47494249, "AnimCurveNode::door_close.R", "" {
+	AnimationCurveNode: 21009626, "AnimCurveNode::door_close.R", "" {
 		Properties70:  {
 			P: "d|X", "Number", "", "A",1
 			P: "d|Y", "Number", "", "A",1
 			P: "d|Z", "Number", "", "A",1
 		}
 	}
-	AnimationCurve: 53634364, "AnimCurve::door_close.RX", "" {
+	AnimationCurve: 96318572, "AnimCurve::door_close.RX", "" {
 		Default: 0
 		KeyVer: 4008
 		KeyTime: *2 {
@@ -490,7 +490,7 @@ Objects:  {
 			a: 2
 		}
 	}
-	AnimationCurve: 65924512, "AnimCurve::door_close.RY", "" {
+	AnimationCurve: 51056759, "AnimCurve::door_close.RY", "" {
 		Default: 0
 		KeyVer: 4008
 		KeyTime: *2 {
@@ -509,7 +509,7 @@ Objects:  {
 			a: 2
 		}
 	}
-	AnimationCurve: 27052283, "AnimCurve::door_close.RZ", "" {
+	AnimationCurve: 30835052, "AnimCurve::door_close.RZ", "" {
 		Default: 0
 		KeyVer: 4008
 		KeyTime: *2 {
@@ -534,23 +534,23 @@ Objects:  {
 ;------------------------------------------------------------------
 
 Connections:  {
-	C: "OO",31995588,0
-	C: "OO",57746033,31995588
-	C: "OO",80146693,57746033
-	C: "OO",16671027,31995588
-	C: "OO",60502210,16671027
-	C: "OO",65598783,62776089
-	C: "OP",79309380,31995588, "Lcl Rotation"
-	C: "OO",79309380,65598783
-	C: "OP",22948208,79309380, "d|X"
-	C: "OP",26111608,79309380, "d|Y"
-	C: "OP",92135185,79309380, "d|Z"
-	C: "OO",23471174,92043988
-	C: "OP",47494249,31995588, "Lcl Rotation"
-	C: "OO",47494249,23471174
-	C: "OP",53634364,47494249, "d|X"
-	C: "OP",65924512,47494249, "d|Y"
-	C: "OP",27052283,47494249, "d|Z"
+	C: "OO",21086989,0
+	C: "OO",65004731,21086989
+	C: "OO",35093547,65004731
+	C: "OO",72583309,21086989
+	C: "OO",15508905,72583309
+	C: "OO",29458573,32417886
+	C: "OP",72349430,21086989, "Lcl Rotation"
+	C: "OO",72349430,29458573
+	C: "OP",8526184,72349430, "d|X"
+	C: "OP",73213062,72349430, "d|Y"
+	C: "OP",35862788,72349430, "d|Z"
+	C: "OO",97512303,70070162
+	C: "OP",21009626,21086989, "Lcl Rotation"
+	C: "OO",21009626,97512303
+	C: "OP",96318572,21009626, "d|X"
+	C: "OP",51056759,21009626, "d|Y"
+	C: "OP",30835052,21009626, "d|Z"
 }
 
 ; Takes section
