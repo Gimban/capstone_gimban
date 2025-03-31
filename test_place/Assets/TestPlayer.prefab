@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2900195019103087132}
   - component: {fileID: 5629742292866398669}
   - component: {fileID: 8331741486495445279}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -152,7 +152,8 @@ GameObject:
   - component: {fileID: 468745880847753456}
   - component: {fileID: 4206800432074314579}
   - component: {fileID: 6826804580816869791}
-  m_Layer: 0
+  - component: {fileID: 5328152316961420473}
+  m_Layer: 7
   m_Name: TestPlayer
   m_TagString: PLAYER
   m_Icon: {fileID: 0}
@@ -302,3 +303,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e48d32e9d0192478eec8bcc7be9e73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5328152316961420473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3757142135004035356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdabcc3badd861d4b8c998978e4a0bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionDistance: 3
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  interactionUI: {fileID: 0}
+  interactionMaxCooldown: 0.5

@@ -8,6 +8,8 @@ public class LightSwitch : Interactable
     {
         animator = GetComponent<Animator>();
     }
+
+    
     public override void OnLookAt()
     {
         // base.OnLookAt();
