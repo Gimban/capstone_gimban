@@ -39,29 +39,46 @@ public class Player_Interaction : MonoBehaviour
         Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
         RaycastHit hit;
 
-        // 레이가 상호작용 가능한 오브젝트에 충돌했는지 확인
-        if (Physics.Raycast(ray, out hit, interactionDistance, interactableLayer))
+        // 모든 레이어를 대상으로 레이캐스트 실행
+        if (Physics.Raycast(ray, out hit, interactionDistance))
         {
-            // 충돌했을 때 상호작용할 수 있는 쿨타임을 확인하고 UI 표시
-            if (interactionCooldown <= 0f)
+            GameObject hitObject = hit.collider.gameObject;
+            int hitLayer = hitObject.layer;
+
+            // 벽 같은 장애물에 막혔는지 확인 (예: "Wall" 레이어)
+            if (hitLayer == LayerMask.NameToLayer("Wall"))
             {
-                interactionUI.SetActive(true);
-            } else
-            {
-                interactionUI.SetActive(false);
+                // 벽을 맞았으므로 상호작용 불가 처리
+                if (currentInteractable != null)
+                {
+                    currentInteractable.OnLookAway();
+                    currentInteractable = null;
+                    interactionUI.SetActive(false);
+                }
+                return;
             }
-            
-            Interactable interactable = hit.collider.GetComponent<Interactable>();
+
+            // 상호작용 가능한 오브젝트인지 확인
+            Interactable interactable = hitObject.GetComponent<Interactable>();
             if (interactable != null)
             {
-                // 새롭게 감지된 오브젝트라면 기존 오브젝트와 비교하여 변경
+                if (interactionCooldown <= 0f)
+                {
+                    interactionUI.SetActive(true);
+                }
+                else
+                {
+                    interactionUI.SetActive(false);
+                }
+
+                // 새롭게 감지된 오브젝트라면 변경 처리
                 if (currentInteractable != interactable)
                 {
                     if (currentInteractable != null)
-                        currentInteractable.OnLookAway(); // 이전 오브젝트에서 시선을 돌렸을 때 호출
+                        currentInteractable.OnLookAway();
 
                     currentInteractable = interactable;
-                    currentInteractable.OnLookAt(); // 새로운 오브젝트를 바라볼 때 호출
+                    currentInteractable.OnLookAt();
                 }
                 return;
             }
@@ -75,6 +92,7 @@ public class Player_Interaction : MonoBehaviour
             interactionUI.SetActive(false);
         }
     }
+
 
     void HandleInteraction()
     {
