@@ -104,9 +104,9 @@ MonoBehaviour:
   tags:
   - lounge
   createsTags:
-  - corridor_doorless
+  - corridor
   - oriel
-  - corridor_cross_doorless
+  - corridor_cross
   - courtyard
   deadEndChance: 5
 --- !u!1 &2057728258670615865
@@ -346,9 +346,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8161680046535257231, guid: ab9415d389431db43865b90bbe3fa230, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -7693171374811912719, guid: ab9415d389431db43865b90bbe3fa230, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6014718591211643787, guid: ab9415d389431db43865b90bbe3fa230, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -5887055831220083389, guid: ab9415d389431db43865b90bbe3fa230, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -5711052370896006010, guid: ab9415d389431db43865b90bbe3fa230, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -5676749271985719135, guid: ab9415d389431db43865b90bbe3fa230, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -4537296741849137177, guid: ab9415d389431db43865b90bbe3fa230, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -3852341972610935857, guid: ab9415d389431db43865b90bbe3fa230, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -3472482710982004207, guid: ab9415d389431db43865b90bbe3fa230, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 818101907399436855, guid: ab9415d389431db43865b90bbe3fa230, type: 3}
       propertyPath: m_Enabled
@@ -357,6 +389,30 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ab9415d389431db43865b90bbe3fa230, type: 3}
       propertyPath: m_Name
       value: mansion_lounge
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ab9415d389431db43865b90bbe3fa230, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 975087540704236082, guid: ab9415d389431db43865b90bbe3fa230, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970984135484485288, guid: ab9415d389431db43865b90bbe3fa230, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4178911886110339184, guid: ab9415d389431db43865b90bbe3fa230, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5695012969088427791, guid: ab9415d389431db43865b90bbe3fa230, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9041270684128441372, guid: ab9415d389431db43865b90bbe3fa230, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
