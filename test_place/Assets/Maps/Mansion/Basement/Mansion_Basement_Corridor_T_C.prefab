@@ -326,6 +326,7 @@ MonoBehaviour:
   - basement_corridor
   - basement_corridor_cross
   - basement_corridor_corner
+  - basement_mech
   deadEndChance: 1
 --- !u!1001 &900815920721960711
 PrefabInstance:

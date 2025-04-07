@@ -959,12 +959,16 @@ MonoBehaviour:
   - {fileID: 6761329638427040184, guid: ecb6381c4c188b149a07ab035dae9ba9, type: 3}
   - {fileID: 5878684771878237019, guid: b167a835af4b11543b624396026c7e9e, type: 3}
   - {fileID: 8323752303513581824, guid: cef5a92c6fa6e284eb59c34db654f533, type: 3}
+  - {fileID: 1931704935898782415, guid: fce7f4f74ca49584493c380f93657d55, type: 3}
   endPrefabs:
   - {fileID: 3035367916353181208, guid: ad7cc043ffc8b3c448e7bb1c50a07acf, type: 3}
   initialSectionTags:
   - basement_stair
   specialRules:
   - Tag: basement_stair
+    MinAmount: 1
+    MaxAmount: 1
+  - Tag: basement_mech
     MinAmount: 1
     MaxAmount: 1
 --- !u!4 &1907874987
