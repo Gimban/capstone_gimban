@@ -136,6 +136,8 @@ MonoBehaviour:
   - lobby
   createsTags:
   - corridor
+  - corridor_t
+  - corridor_cross
   deadEndChance: 0
 --- !u!1 &1136148159230655397
 GameObject:

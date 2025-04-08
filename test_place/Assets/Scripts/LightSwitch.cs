@@ -1,36 +1,79 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class LightSwitch : Interactable
 {
     private Animator animator;
-    public GameObject lights;
+
+    public GameObject lights;               // 조명 그룹
+    private Light[] lightCP;                // Light 컴포넌트들
+    private Renderer[] renderers;           // MeshRenderer들
+
+    private Dictionary<Renderer, Color> originalEmissionColors = new();
+
     private void Start()
     {
         animator = GetComponent<Animator>();
+
+        if (lights != null)
+        {
+            lightCP = lights.GetComponentsInChildren<Light>(true);
+            renderers = lights.GetComponentsInChildren<Renderer>(true);
+
+            // Emission 색상 저장
+            foreach (Renderer rend in renderers)
+            {
+                if (rend.material.HasProperty("_EmissionColor"))
+                {
+                    Color color = rend.material.GetColor("_EmissionColor");
+                    originalEmissionColors[rend] = color;
+                }
+            }
+        }
     }
 
-    
     public override void OnLookAt()
     {
-        // base.OnLookAt();
-        // Debug.Log("Door Look");
+        
     }
 
     public override void OnLookAway()
     {
-        // base.OnLookAway();
-        // Debug.Log("Door Lookaway");
+       
     }
 
     public override void OnInteract()
     {
-        // base.OnInteract();
-        // Debug.Log("Door Interacted");
-        animator.SetBool("light_toggle", !animator.GetBool("light_toggle"));
+        bool toggle = !animator.GetBool("light_toggle");
+        animator.SetBool("light_toggle", toggle);
 
         if (lights != null)
         {
-            lights.SetActive(animator.GetBool("light_toggle"));
+            // Light 컴포넌트 끄기/켜기
+            foreach (Light light in lightCP)
+            {
+                light.enabled = toggle;
+            }
+
+            // Emission 조절
+            foreach (Renderer rend in renderers)
+            {
+                if (rend.material.HasProperty("_EmissionColor"))
+                {
+                    if (toggle && originalEmissionColors.TryGetValue(rend, out Color origColor))
+                    {
+                        rend.material.SetColor("_EmissionColor", origColor);
+                        DynamicGI.SetEmissive(rend, origColor);
+                    }
+                    else
+                    {
+                        rend.material.SetColor("_EmissionColor", Color.black);
+                        DynamicGI.SetEmissive(rend, Color.black);
+                    }
+                }
+            }
+
+            // Debug.Log("Lights toggled: " + toggle);
         }
     }
 }
