@@ -180,7 +180,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 0
   serializedVersion: 3
-  m_Size: {x: 0.13, y: 0.014, z: 0.014}
+  m_Size: {x: 0.13, y: 0.016, z: 0.016}
   m_Center: {x: 0, y: 0.0425, z: -0.012}
 --- !u!95 &5017493810710198519
 Animator:

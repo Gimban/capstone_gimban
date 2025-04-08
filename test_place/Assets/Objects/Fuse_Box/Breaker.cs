@@ -1,9 +1,16 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.Rendering;
 
 public class Breaker : MonoBehaviour
 {
     public GameObject breakerRoot;
+
+    public static bool power
+    {
+        get;
+        private set;
+    }
 
     private Dictionary<Light, bool> lightStates = new();
     private Dictionary<Renderer, Color> originalEmissionColors = new();
@@ -17,6 +24,7 @@ public class Breaker : MonoBehaviour
     }
     public void TurnOffBreaker()
     {
+        power = false;
         lightStates.Clear();
         originalEmissionColors.Clear();
 
@@ -40,6 +48,7 @@ public class Breaker : MonoBehaviour
 
     public void TurnOnBreaker()
     {
+        power = true;
         foreach (var pair in lightStates)
         {
             Light light = pair.Key;
@@ -60,5 +69,12 @@ public class Breaker : MonoBehaviour
 
         lightStates.Clear();
         originalEmissionColors.Clear();
+
+        LightSwitch[] sw = breakerRoot.GetComponentsInChildren<LightSwitch>();
+
+        foreach (var pair in sw)
+        {
+            pair.RestoreLightFromBreaker();
+        }
     }
 }

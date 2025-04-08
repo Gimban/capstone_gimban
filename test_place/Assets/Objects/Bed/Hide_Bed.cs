@@ -40,7 +40,7 @@ public class Hide_Bed : Interactable
     {
         hide = !hide;
 
-        player.GetComponent<BoxCollider>().enabled = !hide;
+        player.GetComponent<Collider>().enabled = !hide;
         player.GetComponent<Rigidbody>().useGravity = !hide;
 
         if (hide)

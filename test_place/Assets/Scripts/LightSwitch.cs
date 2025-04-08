@@ -47,33 +47,51 @@ public class LightSwitch : Interactable
         bool toggle = !animator.GetBool("light_toggle");
         animator.SetBool("light_toggle", toggle);
 
+        //if (!Breaker.power)
+        //{
+        //    return;
+        //}
+
         if (lights != null)
         {
             // Light ÄÄÆ÷³ÍÆ® ²ô±â/ÄÑ±â
-            foreach (Light light in lightCP)
-            {
-                light.enabled = toggle;
-            }
-
-            // Emission Á¶Àý
-            foreach (Renderer rend in renderers)
-            {
-                if (rend.material.HasProperty("_EmissionColor"))
-                {
-                    if (toggle && originalEmissionColors.TryGetValue(rend, out Color origColor))
-                    {
-                        rend.material.SetColor("_EmissionColor", origColor);
-                        DynamicGI.SetEmissive(rend, origColor);
-                    }
-                    else
-                    {
-                        rend.material.SetColor("_EmissionColor", Color.black);
-                        DynamicGI.SetEmissive(rend, Color.black);
-                    }
-                }
-            }
+            ApplyLightState(toggle);
 
             // Debug.Log("Lights toggled: " + toggle);
+        }
+    }
+
+    public void RestoreLightFromBreaker()
+    {
+        bool toggle = animator.GetBool("light_toggle");
+
+        ApplyLightState(toggle);
+
+        // Debug.Log("Light restored based on switch toggle: " + toggle);
+    }
+
+    private void ApplyLightState(bool state)
+    {
+        foreach (Light light in lightCP)
+        {
+            light.enabled = state;
+        }
+
+        foreach (Renderer rend in renderers)
+        {
+            if (rend.material.HasProperty("_EmissionColor"))
+            {
+                if (state && originalEmissionColors.TryGetValue(rend, out Color origColor))
+                {
+                    rend.material.SetColor("_EmissionColor", origColor);
+                    DynamicGI.SetEmissive(rend, origColor);
+                }
+                else
+                {
+                    rend.material.SetColor("_EmissionColor", Color.black);
+                    DynamicGI.SetEmissive(rend, Color.black);
+                }
+            }
         }
     }
 }
