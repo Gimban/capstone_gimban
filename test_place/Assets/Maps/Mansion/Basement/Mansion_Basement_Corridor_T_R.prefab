@@ -516,6 +516,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mansion_basement_T_cross_pipe
       objectReference: {fileID: 0}
+    - target: {fileID: 6726750176065510321, guid: 7759313494367a749bc97af97ea68910, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 991a81af233083b4a825a8ac63d1db4a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
