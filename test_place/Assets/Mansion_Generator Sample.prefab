@@ -48,8 +48,8 @@ MonoBehaviour:
   randomizeSeed: 1
   seed: -87093575
   sectionContainer: {fileID: 0}
-  maxLevelSize: 200
-  maxAllowedOrder: 15
+  maxLevelSize: 50
+  maxAllowedOrder: 10
   sectionPrefabs:
   - {fileID: 4592339542758354067, guid: cdc75dcb098ce41439ae44d8208df655, type: 3}
   - {fileID: 720735042460834876, guid: 0a285cd38433cc947b23c63f6c2f9633, type: 3}
