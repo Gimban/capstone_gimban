@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8208331193876814608}
   - component: {fileID: 6190536854346929281}
+  - component: {fileID: 8283872303266587787}
   m_Layer: 6
   m_Name: TripleBattery
   m_TagString: Untagged
@@ -56,6 +57,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.07, y: 0.07, z: 0.07}
   m_Center: {x: 0, y: 0.035, z: 0}
+--- !u!114 &8283872303266587787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5568915731102173284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea68816ac6fcd00458cd1b74cf10cb93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1501347956589817417
 PrefabInstance:
   m_ObjectHideFlags: 0
