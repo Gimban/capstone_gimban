@@ -14,13 +14,13 @@ public class Item : Interactable
 
     public override void OnInteract()
     {
-        Destroy(gameObject);
-
         // æ∆¿Ã≈€ »πµÊ «‘ºˆ
         ItemSpawnPoint spawnPoint = GetComponentInParent<ItemSpawnPoint>();
-        if (spawnPoint != null )
+        if (spawnPoint != null)
         {
             spawnPoint.Item = false;
         }
+
+        Destroy(gameObject);
     }
 }

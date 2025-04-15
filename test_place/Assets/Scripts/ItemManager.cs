@@ -36,12 +36,14 @@ public class ItemManager : MonoBehaviour
         */
 
         // 일정 시간 마다 아이템을 생성함
+        
         timer += Time.deltaTime;
         if (timer >= itemDelay)
         {
             CreateItem();
             timer = 0f;
         }
+        
     }
 
     void CreateItem()
