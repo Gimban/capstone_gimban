@@ -9,6 +9,8 @@ TagManager:
   - PLAYER
   - L
   - R
+  - ITEM
+  - ITEM_SPAWN
   layers:
   - Default
   - TransparentFX
